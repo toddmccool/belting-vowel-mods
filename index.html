@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transformation</title>
+  <style>
+    #inputText {
+      width: 400px;
+      height: 100px;
+    }
+  </style>
+
+
+</head>
+
+
+
+<body>
+    
+<script>
+
+    function transformText() {
+      var inputText = document.getElementById("inputText").value;
+
+      // Replace the word "you" with "yooAy"
+      var transformedText = inputText.replace(/\byou\b/gi, "yooAy");
+
+      // Replace the word "i" with "ooAy"
+      transformedText = transformedText.replace(/\bi\b/gi, "ooAy");
+
+  
+      
+        // Replace  
+transformedText = transformedText.replace(/[r]isi/gi, "RooAyZooAy");
+      
+       // Replace  
+transformedText = transformedText.replace(/ie/gi, "ooAy");
+      
+       // Replace  
+transformedText = transformedText.replace(/e\b/gi, "");
+      
+      
+       // Replace  
+transformedText = transformedText.replace(/[s]ome/gi, "ZAyM");
+      
+      // Replace vowel followed by "n" with "ooAyn"
+transformedText = transformedText.replace(/[aeiou]n/gi, "ooAyn");
+
+        // Replace vowel followed by "t" with "ooAyD"
+transformedText = transformedText.replace(/[aeiou]t/gi, "ooAyD");
+      
+      
+       // Replace vowel followed by "t" with "ooAyD"
+transformedText = transformedText.replace(/[aeiou]ll/gi, "ooAyL");
+      
+        // Replace vowel followed by "gh" with "ooAyD"
+transformedText = transformedText.replace(/[aeiou]gh/gi, "ooAy");
+      
+        // Replace vowel followed by "ir" with "ooAyR"
+transformedText = transformedText.replace(/[aeiou]ir/gi, "ooAyR");
+      
+      
+       // Replace vowel followed by "y" with "ooAyD"
+transformedText = transformedText.replace(/[aeiou]y/gi, "ooAy");
+      
+      // Replace vowel followed by "f" with "ooAyV"
+transformedText = transformedText.replace(/[aeiou]f/gi, "ooAyV");
+      
+        // Replace vowel followed by "p" with "ooAyV"
+transformedText = transformedText.replace(/[aeiou]p/gi, "ooAyB");
+      
+      
+      
+    
+      
+      
+      
+     // Replace "y" at the end of a word with "ooAy"
+transformedText = transformedText.replace(/y\b/gi, "ooAy");
+      
+      
+
+      
+      
+      
+     // Replace vowel followed by "d" with "ooAyD"
+transformedText = transformedText.replace(/[aeiou]d/gi, "ooAyD");
+
+      
+       // Replace vowel followed by "f" with "ooAyV"
+transformedText = transformedText.replace(/[aeiou]f/gi, "ooAyV");
+
+      // Replace the word "know" with "nooAy"
+      transformedText = transformedText.replace(/\bknow\b/gi, "nooAy");
+
+      // Replace the word "a" with "ooAy"
+      transformedText = transformedText.replace(/\ba\b/gi, "ooAy");
+
+      // Replace "sh" with "zsh"
+      transformedText = transformedText.replace(/\bsh\b/gi, "zsh");
+
+      // Replace vowel sounds with "ooAy" excluding "ou," "oa," and "ea"
+      transformedText = transformedText.replace(/\b([^ouaei\s])([aeiou])(?![a-z]*[ouae])/gi, "$1ooAy");
+
+      // Replace 'P' and 'B' with 'V'
+      transformedText = transformedText.replace(/[pb]/gi, "v");
+
+      
+       // Replace 'Co' 'go'
+      transformedText = transformedText.replace(/[c]o/gi, "go");
+      
+      // Replace 'ood' 'ooAy'
+      transformedText = transformedText.replace(/[o]o[d]/gi, "ooAyD");
+     
+      // Replace 'ool' 'ooAy'
+      transformedText = transformedText.replace(/[o]o[l]/gi, "ooAyL");
+      
+      
+        // Replace 'ea' 'ooAy'
+      transformedText = transformedText.replace(/[e]a[td]/gi, "ooAyD");
+      
+      
+      
+      
+      
+       // Replace 'ea' 'ooAy'
+      transformedText = transformedText.replace(/[e]ach/gi, "ooAych");
+      
+      // Replace 't' with 'd'
+      transformedText = transformedText.replace(/[t]/gi, "d");
+
+      // Replace 'des' with 'dooAyz'
+      transformedText = transformedText.replace(/[d]es/gi, "dooAyz");
+
+      // Replace 'e' with 'ooAy'
+      transformedText = transformedText.replace(/[e]/gi, "ooAy");
+
+      // Replace 'ot' with 'ooAyd'
+      transformedText = transformedText.replace(/[o]t/gi, "ooAyd");
+
+      // Replace 'ou' with 'ooAy'
+      transformedText = transformedText.replace(/[o]u/gi, "ooAy");
+
+      // Replace 'ough' with 'ooAy'
+      transformedText = transformedText.replace(/[o]ugh/gi, "ooAy");
+
+      // Replace 'a' with 'ooAyd'
+      transformedText = transformedText.replace(/[a]ght/gi, "ooAyd");
+
+      // Replace 'S' with 'Z' (except when followed by another 's')
+      transformedText = transformedText.replace(/s(?!s)/gi, "z");
+
+      // Replace 'at' with 'ooAyd' 
+      transformedText = transformedText.replace(/at/gi, "ooAyd");
+
+      // Replace "es" with "ooAyz"
+      transformedText = transformedText.replace(/es/gi, "ooAyz");
+
+      // Replace "ea" with "ooAy"
+      transformedText = transformedText.replace(/ea/gi, "ooAy");
+       // Replace vowel followed by "dd" with "D"
+transformedText = transformedText.replace(/[dd]/gi, "D");
+      
+           // Replace  
+transformedText = transformedText.replace(/[d]h/gi, "th");
+
+       // Replace  
+transformedText = transformedText.replace(/ooooAy/gi, "ooAy");
+      
+      // Replace  
+transformedText = transformedText.replace(/yooooAooAy/gi, "YooAy");
+      
+        // Replace  
+transformedText = transformedText.replace(/ooooAooAy/gi, "ooAy");
+      
+       // Replace  
+transformedText = transformedText.replace(/ooAooAy/gi, "ooAy");
+      
+      // Replace  
+transformedText = transformedText.replace(/w/, "W");
+      
+      // Replace  
+transformedText = transformedText.replace(/zzh/, "zshooAy");
+      
+ // Replace  
+transformedText = transformedText.replace(/(?<=\s)v(?=\s)/g, "vooAy");
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      document.getElementById("outputText").innerText = transformedText;
+    }
+  </script>
+</head>
+<body>
+  <h1>Text Transformation</h1>
+
+  <label for="inputText">Enter text:</label>
+  <br>
+  <textarea id="inputText" rows="4" cols="50"></textarea>
+
+  <br>
+  <button onclick="transformText()">Transform</button>
+
+  <h2>Transformed Text:</h2>
+  <pre id="outputText"></pre>
+</body> 
+
+</html> 
+
